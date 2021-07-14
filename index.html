@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+  <link rel="stylesheet" href="scripts_styling/main.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- Start of -->
+  <section>
+    <div class="flex-container align-content-center justify-content-center">
+      <div class="flex-item-first">
+        <span><br /></span>
+        <span>
+          <image>
+            <img src="images/icon-sedans.svg" alt="Sedans">
+          </image>
+        </span>
+        <span>
+          <h1>Sedans</h1>
+          <p>
+            Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+            or on your next road trip.
+          </p>
+        </span>
+        <span><br /></span><span><br /></span><span><br /></span><span><br /></span>
+        <span>
+          <button id="buttonOrange" onmouseover="bigUp1()" onmouseout="bigOut1()">Learn More</button>
+        </span>
+        <span><br /></span><span><br /></span><span><br /></span><span><br /></span>
+      </div>
+      <div class="flex-item-second">
+        <span><br /></span>
+        <span>
+          <image>
+            <img src="images/icon-suvs.svg" alt="Sedans">
+          </image>
+        </span>
+        <span>
+          <h1>SUVs</h1>
+          <p>
+            Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+            and off-road adventures.
+          </p>
+        </span>
+        <span><br /></span><span><br /></span><span><br /></span><span><br /></span>
+        <span>
+          <button id="buttonLB" onmouseover="bigUp2()" onmouseout="bigOut2()">Learn More</button>
+        </span>
+        <span><br /></span><span><br /></span><span><br /></span><span><br /></span>
+      </div>
+      <div class="flex-item-third">
+        <span><br /></span>
+        <span>
+          <image>
+            <img src="images/icon-luxury.svg" alt="Sedans">
+          </image>
+        </span>
+        <span>
+          <h1>Luxury</h1>
+          <p>
+            Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+            rental and arrive in style.
+          </p>
+        </span>
+        <span><br /></span><span><br /></span><span><br /></span><span><br /></span>
+        <span>
+          <button id="buttonDB" onmouseover="bigUp3()" onmouseout="bigOut3()">Learn More</button>
+        </span>
+        <span><br /></span><span><br /></span><span><br /></span><span><br /></span>
+      </div>
+    </div>
+  </section>
+  
+  <!-- End of  -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    function bigUp3(){
+      $(".flex-item-third").addClass("transformUp");
+    }
+    function bigOut3(){
+      $(".flex-item-third").removeClass("transformUp");
+    }
+    function bigUp2(){
+      $(".flex-item-second").addClass("transformUp");
+    }
+    function bigOut2(){
+      $(".flex-item-second").removeClass("transformUp");
+    }
+    function bigUp1(){
+      $(".flex-item-first").addClass("transformUp");
+    }
+    function bigOut1(){
+      $(".flex-item-first").removeClass("transformUp");
+    }
+  </script>
+</body>
+</html>

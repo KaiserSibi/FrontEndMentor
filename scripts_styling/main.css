@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+body {
+    font-size: 15px;
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive !important;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: 0;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+}
+
+#buttonOrange {
+    color: hsl(31, 77%, 52%);
+}
+#buttonOrange:hover {
+    background-color: hsla(9, 100%, 64%, 0);
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    color: white;
+}
+#buttonLB {
+    color: hsl(184, 100%, 22%);
+}
+#buttonLB:hover {
+    background-color: hsla(9, 100%, 64%, 0);
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    color: white;
+}
+#buttonDB {
+    color:hsl(179, 100%, 13%);
+}
+#buttonDB:hover {
+    background-color: hsla(9, 100%, 64%, 0);
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; 
+    min-height: 100%;  
+    min-height: 100vh;
+    align-items: center;
+}
+  
+.flex-item-first {
+    background-color: hsl(31, 77%, 52%);
+    max-width: 20vw;
+    min-height: 50vh;
+    padding: 5vh 2.5vw 0 2.5vw;
+    border-radius: 15px 0px 0px 15px;
+}
+  
+.flex-item-second {
+    background-color: hsl(184, 100%, 22%);
+    max-width: 20vw;
+    min-height: 50vh;
+    padding: 5vh 2.5vw 0 2.5vw;
+}
+.transformUp {
+    transform: translate(0px, -10px);   
+}
+
+.flex-item-third {
+    background-color: hsl(179, 100%, 13%);
+    max-width: 20vw;
+    min-height: 50vh;
+    padding: 5vh 2.5vw 0 2.5vw;
+    border-radius: 0px 15px 15px 0px;
+}
+
+/* top left, top right, bottom right, bottom left */
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    .flex-item-first {
+        min-width: 80vw;
+        padding: 5vh 10vw 0 10vw;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .flex-item-second {
+        min-width: 80vw;
+        padding: 5vh 10vw 0 10vw;
+    }
+    .flex-item-third {
+        min-width: 80vw;
+        padding: 5vh 10vw 0 10vw;
+        border-radius: 0px 0px 15px 15px;
+    }
+}
